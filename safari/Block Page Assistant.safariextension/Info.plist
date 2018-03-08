@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.0</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -49,7 +49,7 @@
 	<key>Description</key>
 	<string>If using DNS based web filtering, this extension will improve the user experience for block pages when using HTTPS.</string>
 	<key>DeveloperIdentifier</key>
-	<string>CK4Y8A58A2</string>
+	<string>J5LHR4GJD2</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
