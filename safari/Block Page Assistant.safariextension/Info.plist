@@ -47,7 +47,7 @@
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>If using DNS based web filtering, this extension will improve the user experience for block pages when using HTTPS.</string>
+	<string>Display block page provided by compatible DNS filtering products for HTTPS web sites</string>
 	<key>DeveloperIdentifier</key>
 	<string>J5LHR4GJD2</string>
 	<key>ExtensionInfoDictionaryVersion</key>
@@ -62,10 +62,10 @@
 			<string>All</string>
 		</dict>
 	</dict>
-	<key>Update Manifest URL</key>
-	<string>https://downloads.dnsthingy.com/safari/management.mytools.blockpageassistant.plist</string>
 	<key>Update From Gallery</key>
 	<true/>
+	<key>Update Manifest URL</key>
+	<string>https://downloads.dnsthingy.com/safari/management.mytools.blockpageassistant.plist</string>
 	<key>Website</key>
 	<string>http://mytools.management</string>
 </dict>
