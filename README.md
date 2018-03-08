@@ -6,6 +6,7 @@ Currently available for
 
 * Chrome: https://chrome.google.com/webstore/detail/block-page-assistant/pkimhjnhalcimiegkknnidjmmoiedhon
 * Safari: https://downloads.dnsthingy.com/safari/1.0/BlockPageAssistant.safariextz
+* Firefox: https://addons.mozilla.org/en-US/firefox/addon/block-page-assistant/
 
 ## How it works
 
