@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Block Page Assistant</title>
+	<script type="text/javascript">
+
+      safari.application.addEventListener("message", messageHandler, false);
+
+      function messageHandler(e) {
+        const tab = e.target;
+        if (e.name === 'error' && tab.url != null && /^https/.test(tab.url)) {
+          const blockedUrl = 'http://mytools.management/isblocked?path=' + tab.url.replace(/^[^\/]*\/\//, '');
+          tab.page.dispatchMessage('redirect', { blockedUrl });
+        } else if (e.name === 'check') {
+          const URL = e.message.URL;
+          const blockedUrl = 'http://' + URL.split('?path=').pop();
+          const xhr = new XMLHttpRequest();
+          xhr.open('HEAD', blockedUrl, true);
+          xhr.onload = function () {
+            if (this.status === 200) {
+              // unblocked, redirect to original URL
+              tab.page.dispatchMessage('redirect', { blockedUrl });
+            }
+          };
+          xhr.onerror = function () {
+            // error, still blocked, do nothing
+          };
+          xhr.send();
+        }
+      }
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
