@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Block Page Assistant",
+  "description": "If using DNS based web filtering, this extension will improve the user experience for block pages when using HTTPS.",
+  "author": "mytools.management",
+  "short_name": "Block Page Assistant",
+  "version": "1.0",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webNavigation",
+    "<all_urls>",
+    "tabs",
+    "webRequestBlocking",
+    "history"
+  ],
+  "background": {
+    "scripts": [
+      "worker.js"
+    ],
+    "persistent": false
+  }
+}
