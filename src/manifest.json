@@ -4,9 +4,11 @@
     "description": "If using DNS based web filtering, this extension will improve the user experience for block pages when using HTTPS.",
     "version": "1.2.0",
     "icons": {
-        "128": "icon128.png",
-        "48": "icon48.png",
-        "16": "icon16.png"
+        "1024": "a1024.png",
+        "512": "a512.png",
+        "128": "a128.png",
+        "48": "a48.png",
+        "16": "a16.png"
     },
     "permissions": [
         "http://mytools.management/*",
